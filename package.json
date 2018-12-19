@@ -1,0 +1,29 @@
+{
+  "name": "javascript_gulp-puppeteer",
+  "version": "1.0.2",
+  "description": "Generate screenshots of all .html files via gulp",
+  "keywords": [],
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alienbuild/javascript_gulp-puppeteer"
+  },
+  "author": "Humayun kabir",
+  "url": "https://github.com/alienbuild/javascript_gulp-puppeteer",
+  "bugs": {
+    "url": "https://github.com/alienbuild/javascript_gulp-puppeteer/issues"
+  },
+  "homepage": "https://www.github.com/alienbuild/javascript_gulp-puppeteer",
+  "email": "lk@alienbuild.uk",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "puppeteer": "^1.11.0",
+    "run-sequence": "^2.2.1",
+    "through2": "^2.0.3",
+  }
+}
