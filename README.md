@@ -1,4 +1,4 @@
-# javascript_gulp-puppeteer
+# Gulp / Pupeteer
 
 This gulp script will systematically take screenshots of all .html files generated in your build, including modals that are triggered with a data-toggle attribute. 
 
