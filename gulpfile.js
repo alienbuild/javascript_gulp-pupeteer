@@ -4,6 +4,7 @@ const puppeteer = require('puppeteer');
 const runSequence = require('run-sequence');
 const path = require('path');
 const fs = require('fs');
+const zipFolder = require('zip-folder');
 
 const shotIt = async (page,filePath) => {
     return new Promise(async(resolve, reject) => {
@@ -163,6 +164,17 @@ const shotIt = async (page,filePath) => {
                     });
                 }
 
+                // Zip packages
+                console.log('OK - Zipping files...');
+                zipFolder(filePathOnly+'\\_jpegs', filePathOnly+'\\screenshots.zip', function(err) {
+                    if(err) {
+                        console.log('Something went wrong!', err);
+                    } else {
+                        console.log('** Packaged: ' +filePathOnly+'\\screenshots.zip **');
+                    }
+                });
+
+                // Complete
                 await bodyHandle.dispose();
                 resolve();
             }catch(err){
